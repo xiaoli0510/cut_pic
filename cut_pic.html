@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cut_pic.css">
+</head>
+<body>
+        <div class="layui-input-inline input_box facility_box">
+                <div class="layui-form-item pad-left">
+
+                    <div class="left_box fl">
+                        <div class="cut-img">
+                            <img id="old-img">
+                            <div class="bgd-layer active">
+                                <div id="chooseBox">
+                                    <div class="bgd-show" ondragstart="return false">
+                                        <img id="highlightImg">
+                                    </div>
+                                    <div class="box" id="box" style="border: 2px dashed rgb(170, 170, 170);">
+                                        <div class="default box-lt"></div>
+                                        <div class="default box-rt"></div>
+                                        <div class="default box-rb"></div>
+                                        <div class="default box-lb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 放大缩小图片 -->
+            
+                        <div class="resize clear" id="resize">
+                            <i class="iconfont icon-11 fl" id="reduceBtn">-</i>
+                            <div class="line" id="line">
+                                <div class="has_move_line" id="moveLine"></div>
+                                <span class="move_dot" id="dot"></span>
+                            </div>
+                            <i class="iconfont icon-tianjia2 fl" id="enlargeBtn">+</i>
+                        </div>
+                        <div class="upload_btn">
+                            <input type="button" id="fileUpload" class="layui-btn layui-btn-primary" value="选择图片">
+                            <input type="file" id="fileSrc" value="" class="fileSrc">
+                        </div>
+                    </div>
+                    <div class="right_box fr">
+                        <p class="preview_text">效果图</p>
+                        <div class="upload-img">
+                            <div class="preview-img">
+                                <!-- <img /> -->
+                                <canvas id="circleCanvas" width="180" height="180" class="circleCanvas">
+                                    <span>你的浏览器不支持canvas</span>
+            
+                                </canvas>
+                                <canvas id="mycanvas" class="mycanvas" width="320" height="180">
+            
+                                    <span>你的浏览器不支持canvas</span>
+                                </canvas>
+            
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+     <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./cut_pic.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+body {
+    width: 1065px;
+}
+.clear {
+    clear:both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float:right;
+}
+.addBanner {
+    margin: 30px 0;
+}
+
+.addBanner .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dataForm {
+    margin-top: 40px;
+}
+
+.dataForm .form-label {
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 120px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.dataForm .form-prompt {
+    clear: both;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-left: 120px;
+}
+
+.form-prompt span {
+    color: #444444;
+}
+
+.form-prompt .error {
+    color: #ef2c2d;
+}
+
+.dataForm .pad-left {
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.pad-left .right_box {
+    width: 320px;
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pad-left .left_box {
+    width: 50%;
+}
+
+.right_box .upload-img {
+    height: 305px;
+    position: relative;
+}
+
+.upload-img .preview-img {
+    overflow: hidden;
+    position: absolute;
+}
+
+.preview-img img {
+    width: 400px;
+    height: 225px;
+    margin-top: -22px;
+    margin-left: -40px;
+}
+.fileUpload {
+    padding: 0 60px;
+    border-radius: 8px;
+}
+.left_box h4 {
+    color: #444444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left_box span {
+    color: #555555;
+}
+
+.left_box .cut-img {
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cut-img>img {
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none; 
+-moz-user-select: none;    
+-khtml-user-select: none;  
+-ms-user-select: none;    
+
+/* 以下两个属性目前并未支持，写在这里为了减少风险 */
+-o-user-select: none;
+user-select: none;  
+}
+
+.cut-img .bgd-layer {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cut-img .active {
+    background: rgba(229, 229, 229, 1);
+}
+
+.bgd-layer #chooseBox {
+    top: 22px;
+    left: 40px;
+    width: 320px;
+    height: 180px;
+    z-index: 102;
+    cursor: crosshair;
+    position: absolute;
+}
+
+.bgd-show {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 103;
+}
+
+.bgd-show img {
+    width: 400px;
+    height: 225px;
+    margin-left: -40px;
+    margin-top: -22px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #aaaaaa;
+    position: absolute;
+    z-index: 105;
+    margin: -2px 0 0 -2px;
+}
+
+.box div.default {
+    background-color: #949494;
+    width: 14px;
+    height: 14px;
+    font-size: 1px;
+    cursor: sw-resize;
+    position: absolute;
+}
+
+.box div.active {
+    background-color: #f4f4f4;
+    opacity: 0.5;
+}
+
+.box .box-lt {
+    top: 0;
+    left: 0;
+    margin-top: -7px;
+    margin-left: -7px;
+}
+
+.box .box-rt {
+    top: 0;
+    right: 0;
+    margin-top: -7px;
+    margin-right: -7px;
+}
+
+.box .box-rb {
+    right: 0;
+    bottom: 0;
+    margin-right: -7px;
+    margin-bottom: -7px;
+}
+
+.box .box-lb {
+    left: 0;
+    bottom: 0;
+    margin-left: -7px;
+    margin-bottom: -7px;
+}
+
+.addBtn {
+    text-align: center;
+}
+
+.addBtn button {
+    padding: 0 100px;
+    margin-top: 30px;
+    margin-left: -100px;
+    background-color: #f2f2f2;
+}
+
+.circleCanvas {
+    border-radius: 50%;
+   
+    margin-bottom: 20px;
+}
+
+.upload_btn {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fileSrc {
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.mycanvas,.circleCanvas {
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: rgba(229, 229, 229, 1);
+}
+
+.preview_text {
+    text-align: left;
+}
+
+/* 放大缩小 */
+
+.line {
+    width: 78%;
+    height: 5px;
+    background: #e2e2e2;
+    margin: 10px 0;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+}
+
+span.move_dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.has_move_line {
+    width: 0%;
+    height: 5px;
+ background-color: #5FB878;
+}
+.resize .iconfont {
+    user-select: none;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    width: 10%;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 22px;
+    color: rgba(0,0,0,.5);
+}
+.resize {
+    display: none;
+    margin: 20px 0 30px 0;
+    height: 40px;
+}
+.facility_box{
+    width: 78%!important;
+}
+.fileUpload{
+    border: 1px solid #C9C9C9!important;
+}
